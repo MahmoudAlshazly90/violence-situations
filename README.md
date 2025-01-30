@@ -1,5 +1,3 @@
-# violence-situations
-
 # Violence Situations Detection
 
 ## Overview
@@ -24,11 +22,6 @@ Ensure you have the following installed:
 pip install opencv-python numpy tensorflow
 ```
 
-## Usage
-### Run the detection script
-```sh
-python live_violence_detection.py
-```
 
 ### Input Options
 - Change the input source in `cap = cv2.VideoCapture()` inside the script:
@@ -44,8 +37,19 @@ python live_violence_detection.py
 Here are some examples of detected violence situations:
 
 ### Video Outputs
-[![Video 1](videos/output1.gif)](videos/output1.mp4)
-[![Video 2](videos/output2.gif)](videos/output2.mp4)
+[![Video 1](output-videos/output.gif)]
+[![Video 2](output-videos/output2.gif)]
+
+## Model Performance and Charts
+Below are performance charts for the trained model:
+
+### Accuracy & Loss Graphs
+![Training and validation loss Chart](charts/output.png)
+![Training and validation accuracy ](charts/output2.png)
+![Accuracy report  ](charts/output3.png)
+![](charts/output4.png)
+
+
 
 ## Model Training
 The model used in this project was trained using a dataset of violent and non-violent videos. If you wish to retrain the model, provide a labeled dataset and use TensorFlow/Keras for training.
@@ -56,9 +60,5 @@ Feel free to open issues or submit pull requests for improvements.
 ## License
 This project is licensed under the MIT License.
 
-## Contact
-For questions or contributions, contact:
-- **Mahmoud Nabil Alshazly**
-- Email: [your_email@example.com]
-- GitHub: [your_github_profile]
+
 
